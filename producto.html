@@ -16,52 +16,55 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-3">
-                <!-- div para foto -->
-                <div class="row">
-                    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="foto-logo" class="healty">
-                </div>
-                <!-- div para registro -->
-                <div class="row">
-                    <button type="button" class="btn btn-outline-success">REGISTRO</button>
-                </div>
-                <!-- div para lista -->
-                <div class="row">
-                    <button type="button" class="btn btn-outline-info">LISTAR</button>
-                </div>
+        <nav class="menu d-flex justify-content-center">
+            <!-- div para foto -->
+            <div class="row">
+                <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="foto-logo" class="healty">
             </div>
-            <div class="col-9">
-                <form action="index.php" method="post">
-                    <div class="row">
-                        <label class="nombre">Nombre:</label>
-                        <input type="string" class="form-control">
-                    </div>
-                    <div class="row">
-                        <label class="caducidad">Fecha de Caducidad:</label>
-                        <input type="date" class="form-control">
-                    </div>
-                    <div class="row">
-                        <label class="codigo">Codigo:</label>
-                        <input type="string" class="form-control">
-                    </div>
-                    <div class="row">
-                        <label class="cantidad">Cantidad:</label>
-                        <input type="int" class="form-control">
-                    </div>
-                    <div class="row">
-                        <div class="input-group">
-                            <label class="unitario">Precio Unitario:</label>
-                            <input type="float" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                            <span class="input-group-text">$</span>
-                            <span class="input-group-text">0.00</span>
-                        </div>
-                    </div>
-                </form>
-                <button type="button" class="btn btn-outline-success">AGREGAR</button>
-                <button type="button" class="btn btn-outline-danger">LIMPIAR</button>
+            <!-- div para registro -->
+            <div class="row">
+                <button type="button" class="registro btn-success">REGISTRO</button>
             </div>
+            <!-- div para lista -->
+            <div class="row">
+                <button type="button" class="listar btn-info">LISTAR</button>
+        </nav>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <form action="index.php" method="post">
+                <div class="row">
+                    <label class="nombre">Nombre:</label>
+                    <input type="string" class="form-control">
+                </div>
+                <div class="row">
+                    <label class="caducidad">Fecha de Caducidad:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="row">
+                    <label class="codigo">Codigo:</label>
+                    <input type="string" class="form-control">
+                </div>
+                <div class="row">
+                    <label class="cantidad">Cantidad:</label>
+                    <input type="int" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label class="unitario">Precio Unitario:</label>
+                        <span class="dolar input-group-text">$</span>
+                        <input type="float" class="form-control"
+                            aria-label="Dollar amount (with dot and two decimal places)">
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="unomas btn-success">AGREGAR</button>
+                <button type="button" class="todomenos btn-danger">LIMPIAR</button>
+                </br>
+            </form>
         </div>
+    </div>
+    </div>
     </div>
 
 </body>

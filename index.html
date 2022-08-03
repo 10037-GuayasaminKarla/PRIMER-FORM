@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circulo{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background: palevioletred;
+            opacity: 0;
+            display: inline-block;
+        }
+        #circulo1{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background: rgb(208, 12, 78);
+            opacity: 0;
+            display: inline-block;
+        }
+        #circulo2{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background: rgb(71, 6, 28);
+            opacity: 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="circulo"></div>
+    <div id="circulo1"></div>
+    <div id="circulo2"></div>
+    <div>
+        <button class="restar">-</button>
+        <input type="number" min="0" step="1" name="" id="total" value="0">
+        <button class="sumar">+</button>
+    </div>
+    <script>
+        const redondo = document.querySelector('#circulo');
+      //  redondo1.style = "background: gray";
+
+        const redondo1 = document.querySelector('#circulo1');
+       // redondo2.style = "background: gray";
+
+        const redondo2 = document.querySelector('#circulo2');
+
+        const restar = document.querySelector(".restar");
+        const sumar = document.querySelector(".sumar");
+        const total = document.querySelector("#total");
+        let opacidad = 0;
+
+        restar.addEventListener("click",()=>{
+            if(Number(total.value)>0){
+                total.value--;
+                opacidad-=0.1;
+                redondo.style = `opacity: ${opacidad}`;
+                redondo1.style = `opacity: ${opacidad}`;
+                redondo2.style = `opacity: ${opacidad}`;
+
+            }
+            
+        });
+        sumar.addEventListener("click",()=>{
+            total.value++;
+            opacidad+=0.1;
+            redondo.style = `opacity: ${opacidad}`;
+            redondo1.style = `opacity: ${opacidad}`;
+            redondo2.style = `opacity: ${opacidad}`;
+            
+            
+        });
+
+        
+        //redondo3.style = "background: gray";
+
+        // redondo1.addEventListener('mouseover',()=>{
+        //     redondo1.style = "background: gray";
+        //     redondo1.style = "background: green";
+  
+        // });
+
+        // redondo2.addEventListener('mouseover',()=>{
+        //     redondo2.style = "background: gray";
+        //     redondo2.style = "background: yellow";
+  
+        // });
+
+        // redondo3.addEventListener('mouseover',()=>{
+        //     redondo3.style = "background: gray";
+        //     redondo3.style = "background: red";
+  
+        // });
+
+
+        
+       
+    </script>
+    
+</body>
+</html>

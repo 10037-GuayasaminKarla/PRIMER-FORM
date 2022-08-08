@@ -30,12 +30,14 @@ form{
 .listar{
     width: 10rem;
     margin-right: 1rem;
+    border-radius: 3rem;
 }
 
 /* boton de registro */
 .registro{
     width: 10rem;
-    margin-right: 1rem ;
+    margin-right: 1rem;
+    border-radius: 3rem;
 }
 
 /* logo nav */
@@ -45,7 +47,7 @@ form{
     padding-right: 1rem ;
 }
 
-/* imagen dentro de boton 3  */
+/* imagen dentro de boton 1  */
 .lista{
     width: 2rem;
 }
@@ -77,6 +79,7 @@ form{
 
 /* formulario */
 .form-control{
+    text-align: center;
     width: 12rem;
     border-radius: 1rem;
     background-color: #7476762d;
@@ -97,7 +100,6 @@ form{
 
 /* boton de agregar */
 .unomas{
-    padding: 1rem;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
@@ -107,10 +109,11 @@ form{
 
 /* boton de limpiar */
 .todomenos{
-    padding: 1rem;
+    padding-left: 1rem;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
     border: px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 1rem;
 }
+
